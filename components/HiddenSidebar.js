@@ -35,21 +35,6 @@ export default function HiddenSidebar() {
           </button>
         </div>
         <ul className="flex flex-col items-center justify-center gap-4 py-8">
-          {/* <li className="text-[18px] font-medium">
-            <Link href='/'>
-              Home
-            </Link>
-          </li>
-          <li className="text-[18px] font-medium">
-            <Link href='/about'>
-              About
-            </Link>
-          </li>
-          <li className="text-[18px] font-medium">
-            <Link href='/contact'>
-              Contact
-            </Link>
-          </li> */}
           {navLinks.map((link, index) => (
             <li key={index} className="text-[18px] font-medium" onClick={toggleSidebar}>
               <Link href={link.path}>
