@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <>
         <h1 className="text-3xl text-blue-500 font-bold mb-8">
           Hello Next13!
         </h1>
@@ -37,7 +37,7 @@ export default function Home() {
         <p className="text-2xl mt-4">
           Count: {count}
         </p>
-      </main>
+      </>
     </>
   )
 }
