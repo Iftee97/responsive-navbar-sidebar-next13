@@ -3,23 +3,8 @@ import { useContext } from "react"
 import { AppContext } from "@/context/AppContext"
 import { HiXMark } from "react-icons/hi2"
 
-export default function HiddenSidebar() {
+export default function HiddenSidebar({ navLinks }) {
   const { showSidebar, toggleSidebar } = useContext(AppContext)
-
-  const navLinks = [
-    {
-      name: 'Home',
-      path: '/'
-    },
-    {
-      name: 'About',
-      path: '/about'
-    },
-    {
-      name: 'Contact',
-      path: '/contact'
-    }
-  ]
 
   return (
     <div className={`fixed top-0 left-0 z-[999] block w-screen h-screen ${showSidebar ? 'w-full translate-x-0 transition-all ease-in-out duration-500' : 'translate-x-[-300%] transition-all ease-in-out duration-500'}`}>

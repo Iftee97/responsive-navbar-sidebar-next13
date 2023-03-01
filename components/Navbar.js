@@ -3,23 +3,8 @@ import { useContext } from "react"
 import { AppContext } from "@/context/AppContext"
 import { HiBars3 } from "react-icons/hi2"
 
-export default function Navbar() {
+export default function Navbar({ navLinks }) {
   const { toggleSidebar } = useContext(AppContext)
-
-  const navLinks = [
-    {
-      name: 'Home',
-      path: '/'
-    },
-    {
-      name: 'About',
-      path: '/about'
-    },
-    {
-      name: 'Contact',
-      path: '/contact'
-    }
-  ]
 
   return (
     <nav className="flex items-center justify-between px-8 py-4 bg-slate-50 border-b border-[#cccccc4d]">
