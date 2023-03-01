@@ -10,7 +10,7 @@ export default function Navbar({ navLinks }) {
     <nav className="flex items-center justify-between px-8 py-4 bg-slate-50 border-b border-[#cccccc4d]">
       <Link href='/' className="inline-block">
         <span className="font-semibold text-[24px]">
-          LogoLink
+          Next13
         </span>
       </Link>
       <ul className="md:hidden flex items-center gap-4">

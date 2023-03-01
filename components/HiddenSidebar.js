@@ -12,7 +12,7 @@ export default function HiddenSidebar({ navLinks }) {
         <div className="flex items-center justify-between px-8 py-4 bg-slate-50 border-b border-[#cccccc4d]">
           <Link href='/' className="inline-block" onClick={toggleSidebar}>
             <span className="font-semibold text-[24px]">
-              LogoLink
+              Next13
             </span>
           </Link>
           <button className="inline-block cursor-pointer" onClick={toggleSidebar}>
