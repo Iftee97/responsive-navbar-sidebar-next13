@@ -15,7 +15,10 @@ export default function Navbar({ navLinks }) {
       </Link>
       <ul className="md:hidden flex items-center gap-4">
         {navLinks.map((link, index) => (
-          <li key={index} className="text-[18px] font-medium" onClick={toggleSidebar}>
+          <li 
+            key={index} className="text-[18px] font-medium" 
+            // onClick={toggleSidebar}
+          >
             <Link href={link.path}>
               {link.name}
             </Link>
