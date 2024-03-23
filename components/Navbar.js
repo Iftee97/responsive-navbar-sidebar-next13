@@ -25,7 +25,10 @@ export default function Navbar({ navLinks }) {
           </li>
         ))}
       </ul>
-      <button className="hidden md:inline-block cursor-pointer" onClick={toggleSidebar}>
+      <button 
+        className="hidden md:inline-block cursor-pointer" 
+        onClick={toggleSidebar}
+      >
         <HiBars3 className="text-[24px]" />
       </button>
     </nav>
